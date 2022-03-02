@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblia del Mapping</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+</head>
+<body class="bg-dark text-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="text-center text-secondary">
+                    Biblia del Mapping
+                </h1>
+                <p class="small text-center mb-0">
+                    <a href="https://twitter.com/_sorangan" target="_blank"><i class="bi-twitter"></i> @_sorangan</a> 
+                </p>
+                <p class="small text-center">
+                    <a href="https://discord.gg/XCYSpFys2B" target="_blank"><i class="bi-discord"></i> osu!Cartografía</a>
+                </p>
+                <hr>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 text-secondary">
+                <div class="izq sticky-top rounded">
+                    <ol class="mt-2">
+                        <!-- EDITOR -->
+                        <li><a href="#editor"><b>Editor</b></a>
+                            <ol>
+                                <li><a href="#editor_songsetup">Song Setup</a>
+                                    <ol>
+                                        <li><a href="#editor_songsetup_general">General</a></li>
+                                        <li><a href="#editor_songsetup_difficulty">Difficulty</a></li>
+                                        <li><a href="#editor_songsetup_audio">Audio</a></li>
+                                        <li><a href="#editor_songsetup_colours">Colours</a></li>
+                                        <li><a href="#editor_songsetup_design">Design</a></li>
+                                        <li><a href="#editor_songsetup_advanced">Advanced</a></li>
+                                    </ol>
+                                </li>
+                                <li><a href="#editor_timing">Timing</a>
+                                    <ol>
+                                        <li><a href="#editor_timing_bpm">BPM</a></li>
+                                        <li><a href="#editor_timing_offset">Offset</a></li>
+                                        <li><a href="#editor_timing_sv">Slider Velocity</a></li>
+                                        <li><a href="#editor_timing_timingpanel">Timing Panel</a></li>
+                                    </ol>
+                                </li>
+                                <li><a href="#editor_compose">Compose</a>
+                                    <ol>
+                                        <li><a href="#editor_compose_playfield">Playfield</a></li>
+                                        <li><a href="#editor_compose_interfaz">Interfaz</a></li>
+                                    </ol>
+                                </li>
+                                <li><a href="#editor_file">File</a>
+                                    <ol>
+                                        <li><a href="#editor_file_aimod">AIMod</a></li>
+                                        <li><a href="#editor_file_uploadbeatmap">Upload Beatmap</a></li>
+                                        <li><a href="#editor_file_export">Export Package</a></li>
+                                        <li><a href="#editor_file_osufile">.osu File</a></li>
+                                    </ol>
+                                </li>
+                            </ol>
+                        </li> 
+    
+                        <!-- RITMO -->
+                        <li><a href="#ritmo"><b>Ritmo</b></a>
+                            <ol>
+                                <li><a href="#ritmo_activo">Ritmo Activo</a></li>
+                                <li><a href="#ritmo_pasivo">Ritmo Pasivo</a></li>
+                                <li><a href="#ritmo_prioridad">Prioridad de sonidos</a></li>
+                                <li><a href="#ritmo_objetos">Objetos</a>
+                                    <ol>
+                                        <li><a href="#ritmo_objetos_circle">Circle</a></li>
+                                        <li><a href="#ritmo_objetos_slider">Slider</a></li>
+                                        <li><a href="#ritmo_objetos_spinner">Spinner</a></li>
+                                    </ol>
+                                </li>
+                                <li><a href="#ritmo_overmapping">Overmapping</a></li>
+                                <li><a href="#ritmo_undermapping">Undermapping</a></li>
+                            </ol>
+                        </li>
+    
+                        <!-- MOVIMIENTO -->
+                        <li><a href=""><b>Movimiento</b></a>
+                            <ol>
+                                <li><a href="">Flow</a></li>
+                                <li><a href="">Tipos de Flow</a>
+                                    <ol>
+                                        <li><a href="">Circular</a></li>
+                                        <li><a href="">Lineal</a></li>
+                                        <li><a href="">Snappy</a></li>
+                                    </ol>
+                                </li>
+                                <li><a href="">Spacing</a></li>
+                                <li><a href="">Énfasis</a></li>
+                            </ol>
+                        </li>
+    
+                        <!-- ESTRUCTURA -->
+                        <li><a href=""><b>Estructura</b></a>
+                            <ol>
+                                <li><a href="">Patrones</a></li>
+                                <li><a href="">Densidad</a></li>
+                                <li><a href="">Consistencia</a></li>
+                            </ol>
+                        </li>
+    
+                        <!-- OTRAS TÉCNICAS -->
+                        <li><a href=""><b>Otras técnicas</b> </a>
+                            <ol>
+                                <li><a href="">Movement Mapping</a></li>
+                                <li><a href="">Edgy Mapping</a></li>
+                                <li><a href="">Russian Mapping</a></li>
+                            </ol>
+                        </li>
+    
+                        <!-- HITSOUNDS -->
+                        <li><a href=""><b>Hitsounds</b></a>
+                            <ol>
+                                <li><a href="">Hitsounds básicos</a></li>
+                                <li><a href="">Hitsounds custom</a></li>
+                                <li><a href="">Keysounding</a></li>
+                            </ol>
+                        </li>
+    
+                        <!-- STORYBOARDS -->
+                        <li><a href=""><b>Storyboards</b></a></li>
+    
+                        <!-- ANÁLISIS -->
+                        <li><a href=""><b>Análisis</b></a></li>
+                    </ol>
+                </div>
+            </div>
+            <div class="col-md-9">
+
+                <!-- EDITOR -->
+                <h1 class="display-1" id="editor">Editor</h1>
+                <p>
+                    El <b>editor</b> es nuestra herramienta principal a la hora de crear un mapa. Es fundamental conocer sus funciones antes de comenzar tu aventura en el mapping. <br>
+                    Es muy recomendable aprenderse los atajos de teclado para optimizar el flujo de trabajo. <small>(Irán apareciendo a medida que avances en la lectura)</small>
+                </p>
+                <p id="editor_songsetup">
+                    Para empezar a usar el editor, arrastraremos un archivo de audio <b>.ogg</b> o <b>.mp3</b> a la ventana de osu. Se creará el mapa y se nos abrirá el <i>Song Setup</i>, donde tendremos que 
+                    llenar el metadata de la canción; nombre del artista, nombre de la canción, etc...
+                </p>
+                
+                <!-- EDITOR > SONG SETUP -->
+                <h4 id="editor_songsetup_general">General</h4>
+
+                <div class="container rounded extra">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <p>
+                                Pongamos de ejemplo la canción <b>Zapatillas - El Canto del Loco</b>.
+                            </p>
+                            <p class="mr-4">
+                                - En <i>Artist</i> pondríamos <b>El Canto del Loco</b>. <br>
+                                - En <i>Title</i> pondríamos <b>Zapatillas</b> <br>
+                                - <i>Beatmap Creator</i> se rellena automáticamente con nuestro nombre de usuario. <br>
+                                - En <i>Difficulty</i> podemos darle un nombre a nuestro nivel. Podemos usar algo original o poner <b>Hard</b>, <b>Insane</b>... <br>
+                                - En <i>Source</i> podemos indicar si la canción es de un juego, de una serie... Este campo y el siguiente son opcionales. <br>
+                                - <i>Tags</i>, sirven para que la gente pueda encontrar tu mapa más fácilmente poniendo palabras como <b>Rock Español</b>, <b>El Canto Del Loco</b>... También puedes añadir tu nombre de usuario.
+                            </p>
+                        </div>
+                        <div class="col-md-5"><img src="img/editor/songsetup_general.png" class="img-fluid rounded" alt="..."></div>
+                    </div>
+                </div>
+                <br>
+                <h4 id="editor_songsetup_difficulty">Difficulty</h4>
+                <p>
+                    Continuando con la siguiente pestaña, tenemos <b>Difficulty</b>. Aquí podemos controlar variables que afectan a la jugabilidad del mapa: <br>
+                    <ul>
+                        <li><b>HP</b>: Cómo de rápido pierde vida el jugador. Lo normal es un valor entre 3 y 5</li>
+                        <li><b>CS</b>: El tamaño de los círculos. Cuanto menor sea el número, mayor sera el círculo y viceversa. Lo normal es un valor entre 3 y 4.5, siendo 4 lo más común.</li>
+                        <li><b>AR</b>: La velocidad con la que aparece el círculo. Depende de la dificultad pero lo normal es que ronde entre 9 y 10.</li>
+                        <li><b>OD</b>: Controla cosas como la precisión y el <i>notelock</i>. Igual que el AR, depende de la dificultad, pero lo normal es entre 8 y 9</li>
+                    </ul>
+                </p>
+
+                <h4 id="editor_songsetup_audio">Audio</h4>
+                <p>
+                    En <b>Audio</b> podremos tocar el volumen de los hitsounds del mapa, no uséis nunca el 100% ya que es demasiado. Es recomendado usar entre 60-75%.
+                </p>
+
+                <h4 id="editor_songsetup_colours">Colours</h4>
+                <p>
+                    En la siguiente pestaña tenemos los colores, lo que hace la mayoria de gente es usar colores que encajen con el fondo. Tened en cuenta que existe una opción en osu llamada <i>Ignore all beatmap skins</i>, 
+                    que si está activada, no se verán los colores personalizados.
+                </p>
+
+                <h4 id="editor_songsetup_design">Design</h4>
+                <p>
+                    La pestaña <b>Design</b> nos la podemos saltar ya que no es relevante.
+                </p>
+
+                <h4 id="editor_songsetup_advanced">Advanced</h4>
+                <p>
+                    En <b>Advanced</b> tenemos una opción que nos permite controlar cómo stackean las notas. Esto se suele dejar por defecto a no ser que quieras conseguir un resultado específico.
+                </p>
+
+                <hr>
+
+                <!-- EDITOR > TIMING -->
+                <h1 class="display-6" id="editor_timing">Timing</h1>
+
+                <p>
+                    Una vez terminado el <b>Song Setup</b>, tendremos que rellenar el <i>Timing</i>. Básicamente ponerle el BPM y el offset al mapa.
+                </p>
+
+                <h4 id="editor_timing_bpm">BPM</h4>
+                <p>
+                    El <b>BPM</b> o <i>Beats per Minute</i> son los golpes por minuto/tempo de la canción. Hay canciones con un BPM único (no cambia) y hay canciones con cambios de BPM. Es muy importante poner el BPM correcto ya que 
+                    en caso de no hacerlo no podríamos mappear de forma precisa, ya que no sonaría sincronizado.
+                </p>
+
+                <h4 id="editor_timing_offset">Offset</h4>
+                <p>
+                    El <b>Offset</b> es el punto en el que empezaría el primer <i>beat</i> y sirve como punto de partida. Prueba a entrar en algún mapa que tengas descargado y comprueba el offset.
+                </p>
+
+                <h4 id="editor_timing_sv">Slider Velocity</h4>
+                <p>
+                    En el <i>timing</i> también tenemos el <b>Slider Velocity</b> o SV, que controla la velocidad de los sliders (y su tamaño). Este parámetro va de la mano del BPM.
+                </p>
+
+                <h4 id="editor_timing_timingpanel">Timing Panel</h4>
+                <p>
+                    Una de las cosas que más usaremos durante el proceso de mappeo, es el <b>Timing Panel</b>. Se abre pulsando <kbd>F6</kbd> en el teclado.
+                </p>
+                <p>
+                    Existen dos tipos de <i>timing points</i>. Los que controlan el BPM (timing points) y los que controlan el SV (inherited points).
+                </p>
+                <div class="container rounded extra">
+                    <div class="row">
+                        <div class="col-md-6"><img src="img/editor/timing_panel.png" class="img-fluid rounded" alt="..."></div>
+
+                        <div class="col-md-6">
+                            <p>
+                                Para crear un nuevo <i>timing point</i>, pulsaremos el botón <img src="img/editor/addtimingpoint.png" class="rounded" alt=""> .
+                            </p>
+                            <p>
+                                <b>Por defecto</b> se genera un timing point, osea, un punto que controla el BPM. Si lo queremos convertir a un punto que controle el <i>Slider Velocity</i>, marcaremos esta opción: <br>
+                                <img src="img/editor/inherittimingpoint.png" class="mx-auto d-block mt-2" alt="">
+                            </p>
+                            <p>
+                                Si queremos usar atajos, <kbd>CTRL</kbd> + <kbd>P</kbd> genera un <i>timing point</i> y <kbd>CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>P</kbd> genera un <i>inherited point</i>.
+                            </p>
+                            <p>
+                                En la pestaña <b>Style</b> podemos activar el <i>Kiai Mode</i>, esto lo activaremos en las partes intensas del mapa. El <i>kiai</i> estará activo hasta el siguiente punto así que ten cuidado de que no se te olvide quitarlo/ponerlo.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+
+                <!-- EDITOR > COMPOSE -->
+                <h1 class="display-6" id="editor_compose">Compose</h1>
+                <p>
+                    Hecha la configuración inicial, podremos empezar a colocar objetos en el <i>playfield</i>.
+                </p>
+
+                <h4 id="editor_compose_playfield">Playfield</h4>
+                <p>
+                    El <b>playfield</b> es todo el espacio que tenemos para colocar objetos. Un error muy común en los mappers nóveles es poner todos los objetos cerca del centro y dejar el resto vacío, por eso es muy importante usar todo el <i>playfield</i>.
+                    De todas maneras, no os preocupéis que en la sección de <a href="">estructura</a> hablaremos de como evitar esto.
+                </p>
+                <p>
+                    Está delimitado por el <i>grid</i>, que se puede controlar con el botón <kbd>G</kbd> . Existe la opción <i>Grid Snap</i> que nos permite colocar círculos ajustados al <i>grid</i>, se activa con <kbd>T</kbd> .
+                </p>
+
+                <h4 id="editor_compose_interfaz">Interfaz</h4>
+                <p>
+                    Alrededor del <i>playfield</i> nos saldrán un montón de iconos y botones que nos permiten realizar acciones como elegir el objeto que queremos colocar, poner <i>hitsounds</i>, etc...
+                </p>
+                <img src="img/editor/compose_edit.png" class="img-fluid rounded" alt="..."> <br><br>
+                <p>
+                    La barra de menú superior contiene todas las opciones posibles.
+                </p>
+                <p>
+                    Siguiendo hacia abajo, tenemos la <i>timeline</i> superior₍₁₎. Ahí apareceran los objetos y podremos moverlos en el tiempo, también apareceran los <i>timing points</i>. A la derecha de la <i>timeline</i> tenemos el <i>Beat Snap Divisor</i>₍₂₎, que nos permite 
+                    controlar el número de divisiones de un beat. Lo más común es 1/4. <br>Pulsando <kbd>CTRL</kbd> y moviendo la rueda del ratón podemos cambiarlo.
+                </p>
+                <p>
+                    Con <kbd>ALT</kbd> y moviendo la rueda del ratón estando encima de la <i>timeline</i> podemos hacer zoom. Si se usa con el ratón encima del playfield modificaremos el <i>Distance Snapping</i> y si lo usamos fuera del playfield,
+                    podremos cambiar el volumen del juego. Así que tened cuidado con dónde usais este atajo.
+                </p>
+                <p>
+                    Tanto (<i>Sampleset y Additions</i>)₍₃₎ a la izquierda como (<i>Whistle, Finish y Clap</i>)₍₃₎ a la derecha están relacionados con los <i>hitsounds</i>, que es un tema que abordaremos más adelante.
+                </p>
+                <p>
+                    A la izquierda tenemos los 3 objetos principales; (<b>Circle</b>, <b>Slider</b> y <b>Spinner</b> y el <i>Select</i>)₍₄₎. Estos objetos son los que usaremos para representar los sonidos de la canción.
+                </p>
+                <p>
+                    A la derecha está el <i>New Combo</i>₍₅₎, que sirve para resetear el conteo de notas y cambiar de color. Y un poco más abajo tenemos otros botones; (<i>Grid Snap</i>, <i>Distance Snap</i>, <i>Lock Notes</i>)₍₆₎.
+                </p>
+                <p>
+                    Para finalizar tenemos la <i>timeline</i> inferior₍₇₎ y a la derecha el <i>Playback Rate</i>₍₈₎ para controlar la velocidad de reproducción de la canción. La <i>timeline</i> inferior muestra toda la canción, sin los objetos pero con los <i>timing points</i> y otra información de interés:
+                </p>
+                <div class="container mb-2">
+                    <img src="img/editor/bot_timeline.png" class="img-fluid rounded" alt="">
+                </div>
+                <p>
+                    Podemos poner <i>Bookmarks</i> (marcadores, de color azul) con <kbd>CTRL</kbd> + <kbd>B</kbd> y quitarlo con <kbd>CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>B</kbd> .
+                </p>
+                <p>
+                    También algo importante es el tiempo a la izquierda, que se puede copiar. <br> Cabe destacar también que si copias un objeto con <kbd>CTRL</kbd> + <kbd>C</kbd> y lo pegas en un chat de discord por ejemplo, sale el tiempo y el objeto:
+                    <img src="img/editor/objectcopy.png" class="rounded" alt="">
+                </p>
+
+                <!-- EDITOR > FILE -->
+                <hr>
+                <h1 class="display-6" id="editor_file">File</h1>
+                <p>
+                    En el menú superior tenemos la pestaña <i>File</i>, donde podremos realizar operaciones relacionadas con el mapa. La más importante sin duda es <i>Save</i> <kbd>CTRL</kbd> + <kbd>S</kbd> .
+                </p>
+                <p>
+                    Existe una herramienta que detecta fallos en el mapa, <i>AIMod</i>. El atajo es <kbd>CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>A</kbd> . AIMod está obsoleto pero se usa para cosas puntuales.
+                </p>
+
+                <h4 id="editor_file_aimod">AIMod</h4>
+                <div class="container rounded extra">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <p>
+                                No os asustéis con las advertencias y los errores porque normalmente no son de gran importancia y simplemente sirven de aviso.
+                            </p>
+                            <p>
+                                Lo que sí son errores importantes son cosas como: <br>
+                                <img src="img/editor/AIMod_example1.png" class="rounded" alt="">
+                                <img src="img/editor/AIMod_example2.png" class="rounded" alt="">
+                            </p>
+                            <p>
+                                Si quieres aprender más sobre estos errores, consulta la <a href="https://osu.ppy.sh/wiki/en/Client/Beatmap_editor/AiMod" target="_blank" rel="noopener noreferrer">wiki</a> de osu.
+                            </p>
+                            <p>
+                                Y si lo que quieres es comprobar si tu mapa esta listo para rankear, usa esta herramienta de la comunidad: <a href="https://github.com/Naxesss/MapsetVerifier/releases" target="_blank" rel="noopener noreferrer">Mapset Verifier</a>.
+                            </p>
+                        </div>
+                        <div class="col-md-5"><img src="img/editor/AIMod.png" class="img-fluid rounded" alt="..."></div>
+                    </div>
+                </div>
+                <br>
+                <h4 id="editor_file_uploadbeatmap">Upload Beatmap</h4>
+                <p>
+                    Una vez terminado tu mapa, vas a querer subirlo a la <a href="https://osu.ppy.sh/beatmapsets" target="_blank" rel="noopener noreferrer">lista pública de mapas</a> de osu. Cuando subes el mapa, ese mapa tendrá la categoría <i>Pending</i>.
+                    Ten en cuenta que solo puedes tener 4 mapas pendientes al mismo tiempo (8 con supporter, ampliable con los mapas rankeados) y que tienes que esperar 4 semanas sin actualizar un mapa para que pase a <i>Graveyard</i>.
+                </p>
+                <p>
+                    Si has subido un mapa y quieres actualizarlo, ya sea porque hayas cambiado algo o hayas terminado alguna parte, se actualiza subiéndolo otra vez.
+                </p>
+                <h4 id="editor_file_export">Export Package</h4>
+                <p>
+                    En cambio si lo que quieres es compartir tu mapa con un amigo para que lo pruebe, sin subirlo a osu, puedes exportar el mapa y se te generará un archivo <b>.osz</b>.
+                </p>
+                <h4 id="editor_file_osufile">Archivo .osu</h4>
+                <p>
+                    Cada dificultad tiene un archivo <b>.osu</b> que contiene información del mapa. El editor es una representación gráfica de este archivo, por lo que siempre puedes cambiar algo en él y se actualizará en el editor.
+                </p>
+                <p>
+                    Si estás haciendo una colaboración con alguien, es mejor pasaros 1 vez el mapa exportado y luego ir pasándoos el <b>.osu</b>.
+                </p>
+                <br><br>
+
+                <h1 class="display-1" id="ritmo">Ritmo</h1>
+                <h1 class="display-6" id="ritmo_activo">Ritmo Activo</h1>
+                <p>
+                    Ritmo Activo es todo aquel sonido que el jugador debe clickar. Para representar ritmos activos, se usan los círculos y los <i>sliderheads</i>.
+                </p>
+                <hr>
+                <h1 class="display-6" id="ritmo_pasivo">Ritmo Pasivo</h1>
+                <p>
+                    Ritmo Pasivo es todo aquello que suena de fondo pero que queremos representar, principalmente se usan los <i>sliderends</i> para esto.
+                </p>
+                <hr>
+                <h1 class="display-6" id="ritmo_prioridad">Prioridad de sonidos</h1>
+                <p>
+                    Las canciones están compuestas por una (o varias) melodías principales, debemos enfocarnos en una a la hora de elegir el ritmo que queremos seguir. Esta prioridad puede ir cambiando a lo largo
+                    del mapa, según el instrumento dominante en cada sección.
+                </p>
+                <p>
+                    Cuando estás empezando a mappear es recomendable elegir canciones simples con una melodía clara, por ejemplo los openings de animes suelen tener un ritmo simple. Mientras que géneros como el jazz o el metal son más complejos 
+                    y deben evitarse al principio.
+                </p>
+                <hr>
+                <h1 class="display-6" id="ritmo_objetos">Objetos</h1>
+                <p>
+                    Ahora que conoces los tipos de ritmo y el ritmo que debes seguir, debes conocer los objetos con los que representarás esos ritmos. <br>
+                    Los atajos para cada objeto son: <kbd>2</kbd> Circle, <kbd>3</kbd> Slider, <kbd>4</kbd> Spinner.
+                </p>
+                <div class="container rounded extra mb-2">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="img/ritmo/circle.png" class="img-fluid rounded" alt="">
+                        </div>
+                        <div class="col-md-4">
+                            <img src="img/ritmo/slider.png" class="img-fluid rounded" alt="">
+                        </div>
+                        <div class="col-md-4">
+                            <img src="img/ritmo/spinner.png" class="img-fluid rounded" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <h4 id="ritmo_objetos_circle">Circle</h4>
+                <p>
+                    Es el objeto más simple, ya que simplemente se compone de un cuerpo. Lo usaremos para representar los sonidos importantes.
+                </p>
+
+                <h4 id="ritmo_objetos_slider">Slider</h4>
+                <p>
+                    El slider es un poco más complicado, tiene un <i>sliderhead</i>, un <i>body</i> y el <i>sliderend</i>.
+                    El <i>sliderhead</i> lo usaremos para representar los sonidos fuertes mientras que los <i>sliderends</i> los usaremos para los sonidos secundarios. <br> El <i>body</i> es la forma que tendrá que 
+                    seguir el jugador para llegar de la cabeza a la cola.
+                </p>
+                <p>
+                    Los sliders se pueden usar para mantener la densidad en una parte concreta, pero de eso hablaremos más adelante.
+                </p>
+
+                <h4 id="ritmo_objetos_spinner">Spinner</h4>
+                <p>
+                    Es el menos usado ya que no tiene ninguna dificultad y solo sirve para representar alguna melodía antes de que empiece una sección o para darle un descanso al jugador.
+                </p>
+
+                <hr>
+                <h1 class="display-6" id="ritmo_overmapping">Overmapping</h1>
+                <p>
+                    Es una técnica que se usa para saturar una sección en concreto.
+                </p>
+                <p>
+                    Consiste en añadir más objetos de los que realmente existen. Se suele utilizar para ir creando un <i>buildup</i> en el mapa y mantener la densidad.
+                </p>
+                <p class="text-d">
+                    Ejemplos: <a href="https://osu.ppy.sh/beatmapsets/115011#osu/297463" target="_blank" rel="noopener noreferrer">Yoiyami Hanabi</a>, 
+                    <a href="https://osu.ppy.sh/beatmapsets/153887#osu/378126" target="_blank" rel="noopener noreferrer">Odoru Mizushibuki</a>.
+                </p>
+
+                <hr>
+                <h1 class="display-6" id="ritmo_undermapping">Undermapping</h1>
+                <p>
+                    Es una técnica que se usa para simplificar una sección en concreto.
+                </p>
+                <p>
+                    Es todo lo contrario al <i>overmapping</i>, éste consiste en limitar el número de objetos para rebajar tensión o destacar sonidos instrumentales importantes.
+                </p>
+                <p>
+                    Ejemplos: <a href="https://osu.ppy.sh/beatmapsets/437683#osu/942356" target="_blank" rel="noopener noreferrer">Notch Hell</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

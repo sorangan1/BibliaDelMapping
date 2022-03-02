@@ -1,0 +1,83 @@
+ol {
+    font-size: small;
+    list-style-type: none;
+    counter-reset: item;
+    margin: 0;
+    padding: 0;
+}
+
+ol > li {
+    display: table;
+    counter-increment: item;
+    margin-bottom: 0.3em;
+}
+
+ol > li:before {
+    content: counters(item, ".") ". ";
+    display: table-cell;
+    padding-right: 0.3em;    
+}
+
+li ol > li {
+    margin: 0;
+}
+
+li ol > li:before {
+    content: counters(item, ".") " ";
+}
+
+a {
+    text-decoration: none !important;
+    color: rgb(104, 125, 194) !important;
+}
+
+a:hover {
+    color: white !important;
+}
+
+p {
+    text-align: justify !important;
+}
+
+kbd {
+    background-color: rgb(255, 255, 255) !important;
+    color: black !important;
+    font-weight: bold;
+}
+
+.extra {
+    background-color: rgb(52, 58, 64);
+    padding: 22px;
+}
+
+h4 {
+    color:rgb(106, 122, 138) !important;
+}
+
+.izq {
+    overflow: scroll;
+    overflow-x: hidden;
+    height: 610px;
+    background: rgb(25, 26, 29);
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(104, 125, 194);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: white;
+}
+
+.sticky-top {
+    top: 10px !important;
+}
