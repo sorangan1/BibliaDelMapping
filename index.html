@@ -17,9 +17,6 @@
                 <h1 class="text-center text-secondary">
                     Biblia del Mapping
                 </h1>
-                <p class="small text-center mb-0">
-                    <a href="https://twitter.com/_sorangan" target="_blank"><i class="bi-twitter"></i> @_sorangan</a> 
-                </p>
                 <p class="small text-center">
                     <a href="https://discord.gg/XCYSpFys2B" target="_blank"><i class="bi-discord"></i> osu!Cartografía</a>
                 </p>
@@ -87,53 +84,59 @@
                         </li>
     
                         <!-- MOVIMIENTO -->
-                        <li><a href=""><b>Movimiento</b></a>
+                        <li><a href="#movimiento"><b>Movimiento</b></a>
                             <ol>
-                                <li><a href="">Flow</a></li>
-                                <li><a href="">Tipos de Flow</a>
+                                <li><a href="#movimiento">Flow</a></li>
+                                <li><a href="#movimiento_angulos_cerrados">Ángulos cerrados</a></li>
+                                <li><a href="#movimiento_angulos_abiertos">Ángulos abiertos</a></li>
+                                <li><a href="#movimiento_tipos_flow">Tipos de Flow</a>
                                     <ol>
-                                        <li><a href="">Circular</a></li>
-                                        <li><a href="">Lineal</a></li>
-                                        <li><a href="">Snappy</a></li>
+                                        <li><a href="#flows">Circular</a></li>
+                                        <li><a href="#flows">Lineal</a></li>
+                                        <li><a href="#flows">Snappy</a></li>
                                     </ol>
                                 </li>
-                                <li><a href="">Spacing</a></li>
-                                <li><a href="">Énfasis</a></li>
+                            </ol>
+                        </li>
+
+                        <li><a href="#enfasis"><b>Énfasis</b></a>
+                            <ol>
+                                <li><a href="#enfasis_spacing">Spacing</a></li>
+                                <li><a href="#enfasis_contraste">Contraste</a></li>
                             </ol>
                         </li>
     
                         <!-- ESTRUCTURA -->
-                        <li><a href=""><b>Estructura</b></a>
+                        <li><a href="#estructura"><b>Estructura</b></a>
                             <ol>
-                                <li><a href="">Patrones</a></li>
-                                <li><a href="">Densidad</a></li>
-                                <li><a href="">Consistencia</a></li>
+                                <li><a href="#estructura_patrones">Patrones</a></li>
+                                <li><a href="#estructura_densidad">Densidad</a></li>
+                                <li><a href="#estructura_consistencia">Consistencia</a></li>
                             </ol>
                         </li>
     
                         <!-- OTRAS TÉCNICAS -->
-                        <li><a href=""><b>Otras técnicas</b> </a>
+                        <li><a href="#otras_tecnicas"><b>Otras técnicas</b> </a>
                             <ol>
-                                <li><a href="">Movement Mapping</a></li>
-                                <li><a href="">Edgy Mapping</a></li>
-                                <li><a href="">Russian Mapping</a></li>
+                                <li><a href="#otras_tecnicas_movement_mapping">Movement Mapping</a></li>
+                                <li><a href="#otras_tecnicas_russian_mapping">Russian Mapping</a></li>
                             </ol>
                         </li>
     
                         <!-- HITSOUNDS -->
-                        <li><a href=""><b>Hitsounds</b></a>
+                        <li><a href="#hitsounds"><b>Hitsounds</b></a>
                             <ol>
-                                <li><a href="">Hitsounds básicos</a></li>
-                                <li><a href="">Hitsounds custom</a></li>
-                                <li><a href="">Keysounding</a></li>
+                                <li><a href="#hitsounds_basicos">Hitsounds básicos</a></li>
+                                <li><a href="#hitsounds_custom">Hitsounds custom</a></li>
+                                <li><a href="#hitsounds_keysounding">Keysounding</a></li>
                             </ol>
                         </li>
     
                         <!-- STORYBOARDS -->
-                        <li><a href=""><b>Storyboards</b></a></li>
+                        <li><a href="#storyboards"><b>Storyboards</b></a></li>
     
                         <!-- ANÁLISIS -->
-                        <li><a href=""><b>Análisis</b></a></li>
+                        <li><a href="#analisis"><b>Análisis</b></a></li>
                     </ol>
                 </div>
             </div>
@@ -451,6 +454,103 @@
                 <p>
                     Ejemplos: <a href="https://osu.ppy.sh/beatmapsets/437683#osu/942356" target="_blank" rel="noopener noreferrer">Notch Hell</a>.
                 </p>
+                <br><br>
+
+                <!-- MOVIMIENTO -->
+                <h1 class="display-1" id="movimiento">Movimiento</h1>
+                <p>
+                    En todos los mapas los objetos fluyen entre sí, es decir, están "conectados". A esto se le llama <i>flow</i>. <br> Antes de conocer los tipos de flow, debemos conocer qué es lo que afecta al flow, el ángulo:
+                </p>
+                <hr>
+                <h1 class="display-6" id="movimiento_angulos_cerrados">Ángulos cerrados</h1>
+                <p>
+                    Se entiende como ángulo cerrado, cualquier patrón que no sobrepase los 90º. Son ángulos cómodos dentro de lo que cabe porque al llegar a la nota frenas y luego vas en la dirección contraria.
+                </p>
+                <div class="container text-center">
+                    <img src="img/movimiento/angulocerrado.png" class="img-fluid rounded" style="width: 80%;" alt="">
+                </div>
+
+                <hr>
+                <h1 class="display-6" id="movimiento_angulos_abiertos">Ángulos abiertos</h1>
+                <p>
+                    Los ángulos abiertos al contrario que los cerrados son de más de 90º y son incómodos de jugar, ya que tienes que frenar y luego continuar en la misma dirección.
+                </p>
+                <div class="container text-center">
+                    <img src="img/movimiento/anguloabierto.png" class="img-fluid rounded" style="width: 80%;" alt="">
+                </div>
+                <hr>
+                <h1 class="display-6" id="movimiento_tipos_flow">Tipos de Flow</h1>
+                <p>
+                    Ahora que ya conoces el factor principal que afecta al flow, puedes aprender los tipos de flow con los que podemos jugar para darle un mejor movimiento a nuestro mapa.
+                </p>
+                <div class="row row-cols-1 row-cols-md-3 g-4" id="flows">
+                    <div class="col">
+                      <div class="card h-100 dark">
+                        <img src="img/movimiento/circularflow.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h4 class="card-title">Flow Circular</h4>
+                          <p class="card-text">Este flow se consigue haciendo que los objetos se conecten entre sí de forma circular, generando así un movimiento más "redondeado". Lo puedes hacer en el sentido de las agujas del reloj o invertido.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-100 dark">
+                        <img src="img/movimiento/linearflow.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-title">Flow Lineal</h4>
+                          <p class="card-text">El flow lineal usa ángulos abiertos y como su nombre indica, es más lineal y con menos cambios de movimiento. En mapas con un <i>spacing</i> alto, es incómo de seguir.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-100 dark">
+                        <img src="img/movimiento/snappyflow.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-title"><i>Snappy</i> Flow</h4>
+                          <p class="card-text">Se basa en movimientos espontáneos y muy abruptos. También se puede ver en mapas con saltos incómodos.</p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <br><br>
+
+                <h1 class="display-1" id="enfasis">Énfasis</h1>
+                <h1 class="display-6" id="enfasis_spacing">Spacing</h1>
+                <hr>
+                <h1 class="display-6" id="enfasis_contraste">Contraste</h1>
+                
+                <br><br>
+                
+                <h1 class="display-1" id="estructura">Estructura</h1>
+                <h1 class="display-6" id="estructura_patrones">Patrones</h1>
+                <hr>
+                <h1 class="display-6" id="estructura_densidad">Densidad</h1>
+                <hr>
+                <h1 class="display-6" id="estructura_consistencia">Consistencia</h1>
+                
+                <br><br>
+                
+                <h1 class="display-1" id="otras_tecnicas">Otras técnicas</h1>
+                <h1 class="display-6" id="otras_tecnicas_movement_mapping">Movement Mapping</h1>
+                <hr>
+                <h1 class="display-6" id="otras_tecnicas_russian_mapping">Russian Mapping</h1>
+                
+                <br><br>
+                
+                <h1 class="display-1" id="hitsounds">Hitsounds</h1>
+                <h1 class="display-6" id="hitsounds_basicos">Hitsounds básicos</h1>
+                <hr>
+                <h1 class="display-6" id="hitsounds_custom">Hitsounds custom</h1>
+                <hr>
+                <h1 class="display-6" id="hitsounds_keysounding">Keysounding</h1>
+
+                <br><br>
+
+                <h1 class="display-1" id="storyboards">Storyboards</h1>
+
+                <br><br>
+
+                <h1 class="display-1" id="analisis">Análisis</h1>
             </div>
         </div>
     </div>

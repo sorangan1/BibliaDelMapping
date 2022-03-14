@@ -81,3 +81,7 @@ h4 {
 .sticky-top {
     top: 10px !important;
 }
+
+.dark {
+    background: rgb(25, 26, 29) !important;
+}
